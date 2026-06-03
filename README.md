@@ -40,15 +40,14 @@ File: mnist_train_small.csv
 
 Assignment 3: Process Creation & IPC Report
 
-### 1. IPC Mechanism Chosen
+1. IPC Mechanism Chosen
 For this task, I utilized the `multiprocessing` module in Python and chose a **Pipe** (`multiprocessing.Pipe()`) as the Inter-Process Communication (IPC) mechanism. 
 
 **Why is it appropriate?**
 A Pipe provides a two-way (duplex) communication channel between exactly two endpoints. Since this assignment strictly requires a 1-to-1 interaction (a single parent sending data to a single child, and the child replying back), a Pipe is the most efficient and straightforward choice. While a Shared Queue could also work, Queues are generally better suited for scenarios with multiple producers or multiple consumers. For direct point-to-point communication, a Pipe avoids the overhead of a Queue's internal locking mechanisms.
 
-### 2. Proof of Execution
-*(Note for the professor: Please see the repository for the `ipc_process.py` source code. Below is a copy of the console output showing proper process creation, data transformation, and clear Process IDs (PIDs) for both parent and child at each step.)*
-
+2. Proof of Execution
+   
 ```text
 Parent [PID 145] starting...
 Parent [PID 145] sending data: 'hello operating systems'
