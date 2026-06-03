@@ -47,7 +47,17 @@ For this task, I utilized the `multiprocessing` module in Python and chose a **P
 A Pipe provides a two-way (duplex) communication channel between exactly two endpoints. Since this assignment strictly requires a 1-to-1 interaction (a single parent sending data to a single child, and the child replying back), a Pipe is the most efficient and straightforward choice. While a Shared Queue could also work, Queues are generally better suited for scenarios with multiple producers or multiple consumers. For direct point-to-point communication, a Pipe avoids the overhead of a Queue's internal locking mechanisms.
 
 2. Proof of Execution
+*(Note for the professor: Please see the repository for the `ipc_process.py` source code. Below is a copy of the console output showing proper process creation, data transformation, and clear PIDs.)*
+
+```text
+Parent [PID 1018] starting...
+Child  [PID 10224] waiting for data...
+Child  [PID 10224] received: 'hello operating systems'
+Child  [PID 10224] transforming data to: 'SMETSYS GNITAREPO OLLEH'
+Child  [PID 10224] sending data back...
+Parent [PID 1018] sending data: 'hello operating systems'
+Parent [PID 1018] received transformed data: 'SMETSYS GNITAREPO OLLEH'
+Parent [PID 1018] finished. Child process terminated.
+```
 
 <img width="873" height="426" alt="image" src="https://github.com/user-attachments/assets/f3e21a71-5fde-43f1-9af8-ab2c82334508" />
-
-
