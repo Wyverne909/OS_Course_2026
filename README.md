@@ -4,7 +4,7 @@ Nom : ALBRYCHT Paul
 Numéro d'étudiant : st64022
 
 
-Assignment 2: File System Interaction Report
+## Assignment 2: File System Interaction Report
 
 ### 1. OS Functions and Libraries Used
 For this assignment, I chose Python and utilized the built-in `os` and `stat` libraries to interact with the underlying Linux file system. 
@@ -38,7 +38,7 @@ File: mnist_train_small.csv
 <img width="713" height="786" alt="image" src="https://github.com/user-attachments/assets/eb0141ea-304f-4638-8885-34416bc5a6a6" />
 <img width="675" height="325" alt="image" src="https://github.com/user-attachments/assets/89d3245c-450f-4115-8a1e-7db870a9ab6b" />
 
-Assignment 3: Process Creation & IPC Report
+## Assignment 3: Process Creation & IPC Report
 
 ### 1. IPC Mechanism Chosen
 For this task, I utilized the `multiprocessing` module in Python and chose a **Pipe** (`multiprocessing.Pipe()`) as the Inter-Process Communication (IPC) mechanism. 
