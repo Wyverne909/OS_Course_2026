@@ -4,7 +4,7 @@ Nom : ALBRYCHT Paul
 Numéro d'étudiant : st64022
 
 
-###Assignment 2: File System Interaction Report
+Assignment 2: File System Interaction Report
 
 ### 1. OS Functions and Libraries Used
 For this assignment, I chose Python and utilized the built-in `os` and `stat` libraries to interact with the underlying Linux file system. 
@@ -38,15 +38,15 @@ File: mnist_train_small.csv
 <img width="713" height="786" alt="image" src="https://github.com/user-attachments/assets/eb0141ea-304f-4638-8885-34416bc5a6a6" />
 <img width="675" height="325" alt="image" src="https://github.com/user-attachments/assets/89d3245c-450f-4115-8a1e-7db870a9ab6b" />
 
-###Assignment 3: Process Creation & IPC Report
+Assignment 3: Process Creation & IPC Report
 
-***1. IPC Mechanism Chosen
+### 1. IPC Mechanism Chosen
 For this task, I utilized the `multiprocessing` module in Python and chose a **Pipe** (`multiprocessing.Pipe()`) as the Inter-Process Communication (IPC) mechanism. 
 
 **Why is it appropriate?**
 A Pipe provides a two-way (duplex) communication channel between exactly two endpoints. Since this assignment strictly requires a 1-to-1 interaction (a single parent sending data to a single child, and the child replying back), a Pipe is the most efficient and straightforward choice. While a Shared Queue could also work, Queues are generally better suited for scenarios with multiple producers or multiple consumers. For direct point-to-point communication, a Pipe avoids the overhead of a Queue's internal locking mechanisms.
 
-###2. Proof of Execution
+### 2. Proof of Execution
 *(Note for the professor: Please see the repository for the `ipc_process.py` source code. Below is a copy of the console output showing proper process creation, data transformation, and clear PIDs.)*
 
 ```text
