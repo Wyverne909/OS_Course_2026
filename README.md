@@ -49,14 +49,6 @@ A Pipe provides a two-way (duplex) communication channel between exactly two end
 2. Proof of Execution
    
 ```text
-Parent [PID 145] starting...
-Parent [PID 145] sending data: 'hello operating systems'
-Child  [PID 182] waiting for data...
-Child  [PID 182] received: 'hello operating systems'
-Child  [PID 182] transforming data to: 'SMETSYS GNITAREPO OLLEH'
-Child  [PID 182] sending data back...
-Parent [PID 145] received transformed data: 'SMETSYS GNITAREPO OLLEH'
-Parent [PID 145] finished. Child process terminated.
 
 <img width="873" height="426" alt="image" src="https://github.com/user-attachments/assets/f3e21a71-5fde-43f1-9af8-ab2c82334508" />
 
